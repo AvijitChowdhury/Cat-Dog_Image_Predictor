@@ -3,7 +3,4 @@ tensorflow
 Keras
 Flask
 gunicorn
-Werkzeug
-Jinja2
-itsdangerous
-MarkupSafe
+
