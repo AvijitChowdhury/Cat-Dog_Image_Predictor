@@ -21,8 +21,6 @@
 <li>CNN Model</li>
 <li>Splitting Data Into Training and Test Set</li>
 <li>Visulazing Dataset and Determining Training Loss</li>
-<li>XG Boost Regressor</li>
-<li>Evaluation</li>
 </ol>
 <img src="./files/smsSpamImage.png" width="700" height="400">
 <video width="320" height="240" controls src="./files/smsSpamDetector.mp4">
