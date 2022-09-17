@@ -1,5 +1,4 @@
 import os
-from tempfile import tempdir
 
 import cv2
 import keras
@@ -74,8 +73,8 @@ if image_file is not None:
         img = Image.open('tempDir/{}'.format(COUNT))
 
         try:
-            img.save('static/{}.png'.format(COUNT))
-            img_arr = cv2.imread('static/{}.jpg'.format(COUNT))
+            # img.save('static/{}.png'.format(COUNT))
+            img_arr = cv2.imread('tempDir/{}'.format(COUNT))
 
             img_arr = cv2.resize(img_arr, (128,128))
             img_arr = img_arr / 255.0
@@ -95,8 +94,8 @@ if image_file is not None:
             else:
                 st.write('It is Cat')
                 st.write('Accuracy Score: ')
-                st.write('CAT: {}% '.format(preds[0]))
-                st.write('DOG: {}% '.format(preds[1])) 
+                st.write('CAT: {} % '.format(preds[0]))
+                st.write('DOG: {} % '.format(preds[1])) 
         except:
             st.write('An Error Has Occured please try again with another file.') 
         
